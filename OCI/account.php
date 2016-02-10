@@ -1,0 +1,28 @@
+<?php
+
+/********* edit hmtl file and insert account.php ****/
+
+// connects to the databases
+
+include (  "dbcreds.php"     ) ;
+( $dbh = mysql_connect ( $hostname, $username, $password ) )
+	       	or die ( "Unable to connect to MySQL database" );
+print "Connected to MySQL<br>";
+mysql_select_db( $project ); 
+
+
+//define variables
+
+
+//if new account: save input into database & create session ids
+
+
+//authenticate existing input with database credentials & create session ids
+
+
+
+
+
+
+
+?>
