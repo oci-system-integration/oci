@@ -15,6 +15,8 @@ mysql_select_db( $project );
 
 
 //if new account: save input into database & create session ids
+		
+		//encrypt password when saving it into db
 
 
 //authenticate existing input with database credentials & create session ids
