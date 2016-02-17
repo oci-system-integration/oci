@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<Div Class="Header" id="Header">
+
+<label for="searchBar" > </label>
+<input id="searchBar" type="search" placeholder="search" >
+
+<img src= "c1.png" width="150" height="150" id="Logo">
+
+<ul id="Icons">
+
+<li><img src= "Cart.png" width="64" height="64" id="CartIcon"></li>
+<li><img src= "Home.png" width="64" height="64" id="HomeIcon"></li>
+<li><img src= "AboutUs.png" width="64" height="64" id="AboutUsIcon"></li>
+<li><img src= "Shipping.png" width="64" height="64" id="ShippingIcon"></li>
+<li><img src= "SignIn.png" width="64" height="64" id="SignInIcon"></li>
+</ul>
+
+
+
+</Div>
+<style>
+body {
+    background-color: e0e4cc;
+}
+.Header
+{
+	width:100%;
+	height:230px;
+	background-size:cover;
+	background-color: grey;
+	top: 0;
+	left: 0;
+	positon:fixed;
+	
+}
+
+#Header ul 
+{
+list-style-type: none; 
+margin:0;
+padding:0;
+position: relative;
+left: 550px;
+bottom: 100px;
+position: fixed;
+}
+
+#Header ul li
+{ 
+	display: inline;
+	margin:10px;
+	bottom:710px;
+	left: 700px;
+	padding:0;
+	position: relative;
+	
+}
+
+#searchBar
+{
+	margin:10px;
+	bottom:830px;
+	padding:0;
+	position: fixed;
+}
+
+#CartIcon:hover
+{
+	width: 70px;
+	height: 70px;
+}
+
+#HomeIcon:hover
+{
+	width: 70px;
+	height: 70px;
+}
+
+#AboutUsIcon:hover
+{
+	width: 70px;
+	height: 70px;
+}
+
+#ShippingIcon:hover
+{
+	width: 70px;
+	height: 70px;
+}
+
+#SignInIcon:hover
+{
+	width: 70px;
+	height: 70px;
+}
+
+img:hover
+{
+	cursor:pointer;
+}
+
+#Logo
+{
+	left: 600px;
+	position: fixed;
+	
+}
+
+#SwapPic
+{
+	left: 690px;
+	position: absolute;
+}
+
+#a
+{
+	left: 50px;
+	top: 600px;
+	position: absolute;
+}
+
+#b
+{
+	left: 700px;
+	top: 600px;
+	position: absolute;
+}
+
+#c
+{
+	left: 1450px;
+	top: 600px;
+	position: absolute;
+}
+
+#d
+{
+	left: 400px;
+	top: 1000px;
+	position: absolute;
+}
+
+#e
+{
+	left: 1200px;
+	top: 1000px;
+	position: absolute;
+}
+</style>
+
+<script>
+
+var image_track = 'a';
+
+function swap()
+{
+	var image = document.getElementById('SwapPic');
+	
+	if(image_track == 'a')
+	{
+		image.src = 'AboutUs.png';
+		image_track = 'b';
+	}
+	
+	else
+	{
+		image.src = 'c1.png';
+		image_track = 'a';
+	}
+}
+
+	var timer1 = setInterval('swap()', 2000);
+</script>
+
+<img src= "c1.png" width="400" height="300" id="SwapPic">
+
+<img src= "c1.png" width="400" height="300" id="a">
+<img src= "c1.png" width="400" height="300" id="b">
+<img src= "c1.png" width="400" height="300" id="c">
+<img src= "c1.png" width="400" height="300" id="d">
+<img src= "c1.png" width="400" height="300" id="e">
+
+</body>
+</html> 
