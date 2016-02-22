@@ -14,6 +14,13 @@ mysql_select_db( $project );
 
 //define variables
 
+$username= mysql_real_escape_string($_GET("username"));
+$password= mysql_real_escape_string($_GET("password"));
+$new_user= $mysql_real_escape_string(_GET("new_user"));
+$email= mysql_real_escape_string($_GET("email"));
+$new_password= mysql_real_escape_string($_GET("new_password"));
+$check_password= mysql_real_escape_string($_GET("check_password"));
+
 
 //if new account: save input into database & create session ids
 
