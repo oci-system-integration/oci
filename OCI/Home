@@ -11,11 +11,11 @@
 
 <ul id="Icons">
 
-<li><img src= "Cart.png" width="64" height="64" id="CartIcon"></li>
-<li><img src= "Home.png" width="64" height="64" id="HomeIcon"></li>
-<li><img src= "AboutUs.png" width="64" height="64" id="AboutUsIcon"></li>
-<li><img src= "Shipping.png" width="64" height="64" id="ShippingIcon"></li>
-<li><img src= "SignIn.png" width="64" height="64" id="SignInIcon"></li>
+<li><img src= "images/Cart.png" width="64" height="64" id="CartIcon"></li>
+<li><img src= "images/Home.png" width="64" height="64" id="HomeIcon"></li>
+<li><img src= "images/AboutUs.png" width="64" height="64" id="AboutUsIcon"></li>
+<li><img src= "images/Shipping.png" width="64" height="64" id="ShippingIcon"></li>
+<li><img src= "images/SignIn.png" width="64" height="64" id="SignInIcon"></li>
 </ul>
 
 
@@ -34,12 +34,12 @@ body {
 	top: 0;
 	left: 0;
 	positon:fixed;
-	
+
 }
 
-#Header ul 
+#Header ul
 {
-list-style-type: none; 
+list-style-type: none;
 margin:0;
 padding:0;
 position: relative;
@@ -49,14 +49,14 @@ position: fixed;
 }
 
 #Header ul li
-{ 
+{
 	display: inline;
 	margin:10px;
 	bottom:710px;
 	left: 700px;
 	padding:0;
 	position: relative;
-	
+
 }
 
 #searchBar
@@ -106,7 +106,7 @@ img:hover
 {
 	left: 600px;
 	position: fixed;
-	
+
 }
 
 #SwapPic
@@ -158,16 +158,16 @@ var image_track = 'a';
 function swap()
 {
 	var image = document.getElementById('SwapPic');
-	
+
 	if(image_track == 'a')
 	{
-		image.src = 'AboutUs.png';
+		image.src = 'images/AboutUs.png';
 		image_track = 'b';
 	}
-	
+
 	else
 	{
-		image.src = 'c1.png';
+		image.src = 'images/c1.png';
 		image_track = 'a';
 	}
 }
@@ -184,4 +184,4 @@ function swap()
 <img src= "c1.png" width="400" height="300" id="e">
 
 </body>
-</html> 
+</html>
