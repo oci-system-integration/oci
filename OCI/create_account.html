@@ -1,9 +1,11 @@
+<DOCTYPE html>
+
 <style>
 label {background:#69D2E7; width: 6px;}
 
 fieldset {
-border-radius: 30px;
-border-width: 2px
+  border-radius: 30px;
+  border-width: 2px
 }
  body{
   background-image: url("images/BG1.png");
@@ -17,41 +19,20 @@ border-width: 2px
 	position: fixed;
 }
 input{
-border-color: #FA6900;
-border-width: 2px;
-border-radius: 5px;
-padding-left: 20px;
-padding-right: 20px;
+  border-color: #FA6900;
+  border-width: 2px;
+  border-radius: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
  }
 hr {
     clear: left;
-}</style>
+}
 
-<DOCTYPE html>
-<body>
-<Div Class="Header">
-<center><h1> Overwhelmed Commerce Inc. </h1></center>
-<A HREF="www.google.com"></A>
-</Div>
-<br><br><br><br><br>
-<center>
-<legend> Welcome! please Sign In or create a new account to continue	</legend>
-<fieldset>
-<label for = "username" > Existing Username </label><input type=text name="username" required ="required" id="user"><br>
-<label for= "pass"> Password</label><input type=password name="password" required ="required"autofocus autocomplete="off"id="password"><br><br>
+/*why is there a seperate set of style scripts?
+This needs a seperate css file and css must be revised and condensed */
 
-Fill in the fields below to create a new account<br><br>
 
-<label for = "new_user" > Username </label><input type=text name="new_user" id= "new_user"><br>
-<label for = "email" > Email</label><input type=text name="email" id= "email"><br>
-<label for= "new_password"> Password</label><input type=password name="new_password" required ="required"autofocus autocomplete="off"id="new_password"><br>
-<label for= "check_password"> Re-type Password</label><input type=password name="check_password" required ="required"autofocus autocomplete="off"id="check_password"><br>
-<br><br>
-<button type="button" >Back</button>               <button type="button">Checkout</button>
-</center>
-</fieldset>
-</body>
-<style>
 label {width: 10em;}
 fieldset {
 border-radius: 15px;
@@ -65,4 +46,47 @@ input[type=submit]{
 border-radius: 5px; padding-left: 20px; padding-right: 20px; background-color: white}
 hr {
     clear: left;
-}</style>
+}
+
+</style>
+
+<form action="create_account.php">
+
+
+<body>
+<Div Class="Header">
+<center><h1> Overwhelmed Commerce Inc. </h1></center>
+<A HREF="www.google.com"></A>
+</Div>
+<br><br><br><br><br>
+<center>
+<legend> Welcome! please Sign In or create a new account to continue	</legend>
+<fieldset>
+
+<label for = "username" > Existing Username </label>
+<input type=text name="username" required ="required" id="user"><br>
+
+<label for= "pass"> Password</label>
+<input type=password name="password" required ="required"autofocus autocomplete="off"id="password"><br><br>
+
+Fill in the fields below to create a new account<br><br>
+
+<label for = "new_user" > Username </label>
+<input type=text name="new_user" id= "new_user"><br>
+
+<label for = "email" > Email</label>
+<input type=text name="email" id= "email"><br>
+
+<label for= "new_password"> Password</label>
+<input type=password name="new_password" required ="required"autofocus autocomplete="off"id="new_password"><br>
+
+<label for= "check_password"> Re-type Password</label>
+<input type=password name="check_password" required ="required"autofocus autocomplete="off"id="check_password"><br>
+<br><br>
+
+<button type="button" >Back</button>               <button type="button">Checkout</button>
+</center>
+</fieldset>
+</body>
+
+</form>
