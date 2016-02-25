@@ -28,13 +28,7 @@ hr {
 }
 
 label {width: 10em;}
-fieldset {
-border-radius: 15px;
-border-color: #414189;
-border-width: 4px;
-background-color:#69D2E7;
-border-color:#E0E4CC
-}
+
 input{border-color: orange; border-width: 5px}
 input[type=submit]{
 border-radius: 5px; padding-left: 20px; padding-right: 20px; background-color: white}
