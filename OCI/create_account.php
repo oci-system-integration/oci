@@ -1,7 +1,5 @@
 <?php
 
-/********* edit hmtl file and insert account.php ****/
-
 // connects to the databases
 
 include (  "dbcreds.php"     ) ;
@@ -14,12 +12,15 @@ mysql_select_db( $project );
 
 //define variables
 
-$e_email= mysql_real_escape_string($_GET("e_email"));
-$password= mysql_real_escape_string($_GET("password"));
+$e_email= mysql_real_escape_string($_GET["e_email"]);
+$password= mysql_real_escape_string($_GET["password"]);
 
-$n_email= mysql_real_escape_string($_GET("n_email"));
-$new_password= mysql_real_escape_string($_GET("new_password"));
-$check_password= mysql_real_escape_string($_GET("check_password"));
+$n_email= mysql_real_escape_string($_GET["n_email"]);
+$new_password= mysql_real_escape_string($_GET["new_password"]);
+$check_password= mysql_real_escape_string($_GET["check_password"]);
+
+echo $n_email;
+
 
 //define cases
 
@@ -28,9 +29,9 @@ $case= 0;
 
 //if all new user fields are filled in mark this as case 1
 
-if( !empty($email) && !empty($new_password){
+if( !empty($n_email) && !empty($new_password)){
 
-	$pwdcheck= " select * from Account where Email= '$e_mail'";
+	$pwdcheck= " select * from Account where Email= '$n_mail'";
 	$query= mysql_query($pwdcheck);
 
 	//make sure password enter in form match
@@ -55,7 +56,8 @@ if( !empty($email) && !empty($new_password){
 
 					//create sql query to run
 
-					$insert= "insert into Account values ('$n_email' , '$new_password' , 1 )";
+					$insert= "insert into Account values ('$n_email' , sha1('$new_password' ), 1 )";
+					echo "Case 2 success";
 
 			}
 
@@ -65,37 +67,49 @@ if( !empty($email) && !empty($new_password){
 
 }
 
+
+
 // if the exisiting user fields are filled mark this as case 2
 
 elseif( !empty($e_email) && !empty($password)){
 
 	$case= 2;
 	$account_match= " select * from Account where Email= '$e_email' and Password= '$password'";
+	echo "Case 2 success";
 
 }
 
 
-/*if create acct button clicked
+//if create a new acct button was clicked and new usr info
+ //filled out then insert data into table otherwise check to
+//  see that exisitings user credentials match
 
-	check to see that required new usr, email, new password, and check password info has been given as well as the button being clicked */
 
-	if( isset($_GET("new_user") && ($case == 1)){
 
-		
+	if( isset($_GET["create"]) && ($case === 1)){
+
+		($run= mysql_query($insert) ) or die (mysql_error());
+
+		echo "Case 1 is working";
 
 	}
 
+	//authenticate existing input with database credentials & create session ids
 
-		//encrypt password when saving it into db
+	elseif(isset($_GET['login']) && ($case == 2)){
 
+		($run= mysql_query($account_match)) or die (mysql_error());
 
-//else if make sure that username, password, and login button was clicked
+		echo "Case 2 is working";
 
-		//authenticate existing input with database credentials & create session ids
+	}
 
 //else (for instances when incomplete info or wrong button clicked, kill connection)
 
+	else{
 
+		die( "Bad input");
+	}
 
 
 
