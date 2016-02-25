@@ -1,7 +1,5 @@
 <style>
-body {
-    background-color: e0e4cc;
-}
+
 .Header
 {
 	width:100%;
@@ -127,62 +125,4 @@ img:hover
 	
 }
 
-#SwapPic
-{
-	left: 690px;
-	position: absolute;
-}
-
-#a
-{
-	left: 50px;
-	top: 600px;
-	position: absolute;
-}
-
-#b
-{
-	left: 700px;
-	top: 600px;
-	position: absolute;
-}
-
-#c
-{
-	left: 1450px;
-	top: 600px;
-	position: absolute;
-}
-
-#d
-{
-	left: 400px;
-	top: 1000px;
-	position: absolute;
-}
-
-#e
-{
-	left: 1200px;
-	top: 1000px;
-	position: absolute;
-}
-
-#bannerBG
-{
-	position:fixed;
-	z-index: 1;
-}
-
-#button1
-{
-	position: relative;
-	
-}
-
-#button1:active
-{
-	position: relative;
-	top: 2px;
-}
 </style>

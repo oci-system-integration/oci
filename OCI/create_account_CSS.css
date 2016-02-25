@@ -40,4 +40,18 @@ input[type=submit]{
 border-radius: 5px; padding-left: 20px; padding-right: 20px; background-color: white}
 hr {
     clear: left;
-}</style>
+}
+
+#button1
+{
+	position: relative;
+	
+}
+
+#button1:active
+{
+	position: relative;
+	top: 2px;
+}
+
+</style>
