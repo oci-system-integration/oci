@@ -1,0 +1,53 @@
+<style>
+
+#ItemLink
+{
+	position:relative;
+	left:90px;
+	top: 90px;
+}
+
+#ItemOverview
+{
+	position:relative;
+	left:90px;
+	top: 90px;
+}
+
+#ItemPrice
+{
+	position:relative;
+	left:600px;
+	bottom:98px;
+}
+
+#AddToCart
+{
+	position:relative;
+	left:600px;
+	bottom:100px;
+}
+
+#Item
+{
+	position:relative;
+	left:100px;
+	top:100px;
+}
+
+#Line
+{
+	position:relative;
+	bottom:80px;
+	border-bottom:solid;
+	border-bottom-color:grey;
+}
+
+
+#cat1
+{
+	bottom:700px;
+	left:30px;
+}
+
+</style>

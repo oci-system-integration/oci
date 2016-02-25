@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<!--Seems to be an error somewhere in here but I can't find it-->
+
+<html>
+
+<style>
+
+#ItemLink
+{
+	position:relative;
+	left:90px;
+	top: 90px;
+}
+
+#ItemOverview
+{
+	position:relative;
+	left:90px;
+	top: 90px;
+}
+
+#ItemPrice
+{
+	position:relative;
+	left:600px;
+	bottom:98px;
+}
+
+#AddToCart
+{
+	position:relative;
+	left:600px;
+	bottom:100px;
+}
+
+#Item
+{
+	position:relative;
+	left:100px;
+	top:100px;
+}
+
+#Line
+{
+	position:relative;
+	bottom:80px;
+	border-bottom:solid;
+	border-bottom-color:grey;
+}
+
+
+#cat1
+{
+	bottom:700px;
+	left:30px;
+}
+
+</style>
+<body>
+<div id="Item">
+
+<a href = "#" id="ItemLink"> Link to product page for this item</a>
+<p id="ItemOverview"> overview </p>
+<img src = "AboutUs.png" width="100px" height="100px" id="ItemPic">  
+<p id="ItemPrice"> Price </p>
+<button type="button" id="AddToCart"> Add to Cart </button>
+<p id="Line" width="200px" > </p>
+
+</div>
+
+
+<p id="cat1"> Video Games </p>
+<p id="cat2"> Game Consoles </p>
+<p id="cat3"> Plush Toys </p>
+
+
+
+ 
+</body>
+
+</html>

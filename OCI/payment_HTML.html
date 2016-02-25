@@ -1,0 +1,54 @@
+<DOCTYPE html>
+<body>
+
+<head>
+<link rel="stylesheet" type="text/css" href="payment_CSS.css">
+</head>
+
+<Div Class="Header">
+<center><h1> Overwhelmed Commerce Inc. </h1></center>
+<A HREF="www.google.com"></A>
+</Div>
+
+<br><br><br><br><br>
+<center>
+<legend> Payment Info	</legend>
+
+Please provide the information needed below <br><br>
+
+<label for = "name" > Name on Card </label><input type=text name="first_name" required ="required" id= "first_name"><br>
+<label for = "card_num" > Credit Card Number </label><input type=text name="card_num" required ="card_num" id= "card_num" maxlength="16" > <br>
+Expiration Month
+<select name="month" form="month" id="month">
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5</option>
+  <option value="6">6</option>
+  <option value="7">7</option>
+  <option value="8">8</option>
+  <option value="9">9</option>
+  <option value="10">10</option>
+  <option value="11">11</option>
+  <option value="12">12</option>
+</select>
+Expiration Year
+<select name="year" form="year" id="year">
+  <option value="1">16</option>
+  <option value="2">17</option>
+  <option value="3">18</option>
+  <option value="4">19</option>
+  <option value="5">20</option>
+  <option value="6">21</option>
+  <option value="7">22</option>
+  <option value="8">23</option>
+  <option value="9">24</option>
+</select>
+
+<!--<label for = "ex_year" > Expiration Year</label><input type=text name="ex_year" required ="required" id= "ex_year"><br>-->
+<label for= "cvc"> CVC Code</label><input type=text name="cvc" required ="required" maxlength="3" id="cvc"><br>
+
+<button type="button" >Back</button>               <button type="button">Finalize</button>
+</center>
+</body>

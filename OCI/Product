@@ -45,6 +45,18 @@
 	width:250px;
 	height:250px;
 }
+
+#button1
+{
+	position: relative;
+	
+}
+
+#button1:active
+{
+	position: relative;
+	top: 2px;
+}
 </style>
 
 <div class = "info">
@@ -65,9 +77,18 @@
 
 <h3> Recommendations based on preferences </h3>
 
+<<<<<<< HEAD
+
+<img src="2.jpg" id="pic2">
+<img src="3.jpg" id="pic3">
+<img src="4.jpg" id="pic4">
+=======
 <img src="images/2.jpg" id="pic2">
 <img src="images/3.jpg" id="pic3">
 <img src="images/4.jpg" id="pic4">
+>>>>>>> origin/master
+
+<img src="Button1.png" id="button1" width="150px" height="30px" onmouseover="document.getElementById('button1').src = 'Button2.png';" onmouseout="document.getElementById('button1').src = 'Button1.png';">
 
 </body>
 </html>
