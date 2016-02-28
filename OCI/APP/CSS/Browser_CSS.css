@@ -1,5 +1,11 @@
 <style>
 
+fieldset {
+border-radius: 30px;
+border-color: orange;
+border-width: 2px
+}
+
 #ItemLink
 {
 	position:relative;
@@ -19,13 +25,6 @@
 	position:relative;
 	left:600px;
 	bottom:98px;
-}
-
-#AddToCart
-{
-	position:relative;
-	left:600px;
-	bottom:100px;
 }
 
 #Item
@@ -60,6 +59,14 @@
 {
 	position: relative;
 	top: 2px;
+}
+
+#AddToCart
+{
+	position:relative;
+	left:600px;
+	bottom:100px;
+	
 }
 
 </style>

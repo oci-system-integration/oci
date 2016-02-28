@@ -1,15 +1,10 @@
 <style>
-#cvc{
-	width : 5%;
-	}
+label {background:#69D2E7; width: 6px;}
 
-input{
-border-color: orange; 
-border-width: 2px;
-border-radius: 5px;
-padding-left: 5px;
-padding-right: 5px; 
- }
+fieldset {
+border-radius: 30px;
+border-width: 2px
+}
  body{
   background-image: url("BG1.png");
  }
@@ -21,8 +16,19 @@ padding-right: 5px;
 	background-size:cover;
 	position: fixed;
 }
+input{
+border-color: #FA6900; 
+border-width: 2px;
+border-radius: 5px;
+padding-left: 20px;
+padding-right: 20px; 
+ }
+hr {
+    clear: left;
+}
 
 label {width: 10em;}
+
 input{border-color: orange; border-width: 5px}
 input[type=submit]{
 border-radius: 5px; padding-left: 20px; padding-right: 20px; background-color: white}
@@ -40,6 +46,15 @@ hr {
 {
 	position: relative;
 	top: 2px;
+}
+
+#searchBar
+{
+
+	border-radius: 30px;
+	border-color: orange;
+	border-width: 2px
+
 }
 
 </style>
