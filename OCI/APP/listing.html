@@ -1,0 +1,98 @@
+<htm>
+<body>
+<style>
+.foo {   
+    float: left;
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(0,0,0,.2);
+}
+table, th, td{
+	border-collapse:separate;
+	border-spacing: 2px 0px;
+	margin-left:auto;
+	margin-right:auto;
+	width:700px;
+}
+td{
+	border-bottom: 1px solid #E9E9E9;
+	height:120px;
+	font-size:120%
+}
+td > img{
+	float:left;
+	margin-right: 10px;
+	height: 80px;
+	width: 80px;
+}
+th{
+	border-bottom: 1px solid #E9E9E9;
+}
+td:nth-child(2){
+	text-align:right;
+	font-size:150%;
+	font-weight:bold;
+}
+#total{
+	margin-left:auto;
+	margin-right:auto;
+	width:980px;
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script>
+		
+		function chk(){
+			var name=document.getElementById('count').value;
+			var category=document.getElementById('category').value;
+			var arrange=document.getElementById('arrange').value;
+			var dataString='count=' + name + '&category=' + category + '&arrange=' + arrange;
+			console.log(dataString);
+			$.ajax({
+				type: 'get',
+				url: 'listing.php',
+				data: dataString,
+				cache:false,
+				success: function(msg){
+					$('#msg').html(msg);
+				}
+			});
+			return false;
+		}
+		$(document).ready(function(){
+			chk();
+		});
+	</script>
+
+
+<div id="total">
+<h2>Product Listing Example</h2>
+<button onClick="chk()">Previous Page</button>
+Items per page:
+<select name="count" id="count" onChange="chk()">
+  <option value="1">1</option>
+  <option value="10">10</option>
+  <option value="25">25</option>
+  <option value="50">50</option>
+  <option value="all">ALL</option>
+</select>
+Category:
+<select name="category" id="category" onChange="chk()">
+	<option value="all">ALL</option>
+</select>
+Arrange by:
+<select name="arrange" id="arrange" onChange="chk()">
+	<option value="namedwn">Name (Descending)</option>
+	<option value="nameup">Name (Ascending)</option>
+	<option value="pricedwn">Price (Lowest)</option>
+	<option value="priceup">Price (Highest)</option>
+</select>
+<button onclick="chk()">Next Page</button>
+
+<div id="msg"></div>
+</div>
+</body>
+</html>
