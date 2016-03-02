@@ -35,15 +35,13 @@ $phone_number= mysql_real_escape_string($_GET["phone"]);
 
 //save input into db
 
-// where does the customer id come in?
-//do i create a random number to insert
 //does email need to be a field in customer info?
 
-$cid= 0;
+
 
 if( isset($_GET["pay"])){
 
-  $cid ++;
+  $cid= hexdex(uniqid());
 
   $save= " insert into Customer values('$cid', '$customer_name', '$phone_number', '/////', '$street1', '$street2', '$city', '$state', '$country', '$zip' )";
 }
