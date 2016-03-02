@@ -32,6 +32,7 @@ $state= mysql_real_escape_string($_GET["state"]);
 $country= mysql_real_escape_string($_GET["country"]);
 
 $phone_number= mysql_real_escape_string($_GET["phone"]);
+
 //save input into db
 
 // where does the customer id come in?
