@@ -2,30 +2,49 @@
 <body>
 
 <head>
-<link rel="stylesheet" type="text/css" href="create_account_CSS.css">
+<link rel="stylesheet" type="text/css" href="../css/create_account_CSS.css">
 </head>
 
-<Div Class="Header">
-<center><h1> Overwhelmed Commerce Inc. </h1></center>
-<A HREF="www.google.com"></A>
-</Div>
-<br><br><br><br><br>
-<center>
-<legend> Welcome! please Sign In or create a new account to continue	</legend>
-<fieldset>
-<label for = "username" > Existing Username </label><input type=text name="username" required ="required" id="user"><br>
-<label for= "pass"> Password</label><input type=password name="password" required ="required"autofocus autocomplete="off"id="password"><br><br>
+<form action="../php/create_account.php">
 
-Fill in the fields below to create a new account<br><br>
+  <body>
 
-<label for = "new_user" > Username </label><input type=text name="new_user" id= "new_user"><br>
-<label for = "email" > Email</label><input type=text name="email" id= "email"><br>
-<label for= "new_password"> Password</label><input type=password name="new_password" required ="required"autofocus autocomplete="off"id="new_password"><br>
-<label for= "check_password"> Re-type Password</label><input type=password name="check_password" required ="required"autofocus autocomplete="off"id="check_password"><br>
-<br><br>
-<button type="button" >Back</button>               <button type="button">Checkout</button>
-</center>
-</fieldset>
-<img src="Button1.png" id="button1" width="150px" height="30px" onmouseover="document.getElementById('button1').src = 'Button2.png';" onmouseout="document.getElementById('button1').src = 'Button1.png';">
-</body>
+    <Div Class="Header">
+      <center><h1> Overwhelmed Commerce Inc. </h1></center>
+      <A HREF="www.google.com"></A>
 
+    </Div>
+
+    <br><br><br><br><br>
+    <center>
+
+      <legend> Welcome! please Sign In or create a new account to continue	</legend>
+
+      <fieldset>
+
+      <label for = "e_email" > Existing Login </label><input type=text name="e_email" required ="required" id="e_email"><br>
+
+      <label for= "pass"> Password</label><input type=password name="password" required ="required"autofocus autocomplete="off"id="password"><br><br>
+
+      <input type= submit name="login" id="login">
+
+      Fill in the fields below to create a new account<br><br>
+
+      <label for = "n_email" > New User's Email </label><input type=text name="n_email" id= "n_email"><br>
+
+      <label for= "new_password"> Password</label><input type=password name="new_password" required ="required"autofocus autocomplete="off"id="new_password"><br>
+
+      <label for= "check_password"> Re-type Password</label><input type=password name="check_password" required ="required"autofocus autocomplete="off"id="check_password"><br>
+
+      <input type= submit name="create" id="create">
+
+      <br><br>
+
+    <img src="Button1.png" id="button1" width="150px" height="30px" onmouseover="document.getElementById('button1').src = 'Button2.png';" onmouseout="document.getElementById('button1').src = 'Button1.png';">
+
+
+    </center>
+    </fieldset>
+
+  </body>
+</form>
