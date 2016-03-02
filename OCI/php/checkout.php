@@ -41,7 +41,7 @@ $phone_number= mysql_real_escape_string($_GET["phone"]);
 
 if( isset($_GET["pay"])){
 
-  $cid= hexdex(uniqid());
+  $cid= hexdec(uniqid());
 
   $save= " insert into Customer values('$cid', '$customer_name', '$phone_number', '/////', '$street1', '$street2', '$city', '$state', '$country', '$zip' )";
 }
