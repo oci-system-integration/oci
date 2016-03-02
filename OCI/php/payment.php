@@ -22,6 +22,12 @@ $cvc= mysql_real_escape_string($_GET['cvc']);
 
 //save payment info into db
 
-if(isset)
+if(isset($_GET["finalize"])){
+
+	//theres no table for payment ... 
+
+	$save= "insert into"
+
+}
 
 ?>
