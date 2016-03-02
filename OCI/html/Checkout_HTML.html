@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 
+
+<form action= "../php/checkout.php">
 <body>
 <head>
-<link rel="stylesheet" type="text/css" href="CSS/Checkout_CSS.css">
-<link rel="stylesheet" type="text/css" href="CSS/BannerHeading_CSS.css">
-<link rel="stylesheet" type="text/css" href="CSS/Button_CSS.css">
+<link rel="stylesheet" type="text/css" href="../CSS/Checkout_CSS.css">
+<link rel="stylesheet" type="text/css" href="../CSS/BannerHeading_CSS.css">
+<link rel="stylesheet" type="text/css" href="../CSS/Button_CSS.css">
 </head>
 
 
@@ -65,19 +67,27 @@
 Please provide the information needed below <br><br>
 
 <label for = "first_name" > First Name </label><input type=text name="first_name" required ="required" id= "first_name"><br>
+
 <label for = "last_name" > Last Name </label><input type=text name="last_name" required ="required" id= "last_name"><br>
+
 <label for = "address_1" > Address 1</label><input type=text name="address_1" required ="required" id= "address_1"><br>
+
 <label for= "address_2"> Address 2</label><input type=text name="address_2" required ="required" id="address_2"><br>
+
 <label for = "city"> City</label><input type=text name= "city" required ="required"id="city"><br>
+
 <label for = "zip"> Zip Code</label><input type=text name= "zip" required ="required"id="zip"><br>
+
 <label for = "country"> Country</label><input type=text name= "country" required ="required"id="country"><br>
+
 <label for = "phone"> Phone Number</label><input type=text name= "phone" required ="required"id="phone"><br>
+
 <br><br>
-<button type="button" >Back</button>               <button type="button">Payment Info</button>
+<button type="button" >Back</button>               <input type= "submit" value= "Payment Info">
 
 </center>
 
 <img src="Button1.png" id="button1" width="150px" height="30px" onmouseover="document.getElementById('button1').src = 'Button2.png';" onmouseout="document.getElementById('button1').src = 'Button1.png';">
 <footer> <p> Copyright 2016 Overwhelmed Commerce, Inc. </p></footer>
 </body>
-
+</form>
