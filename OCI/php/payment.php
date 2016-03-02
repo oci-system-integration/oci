@@ -8,25 +8,36 @@ include (  "dbcreds.php"     ) ;
 print "Connected to MySQL<br>";
 mysql_select_db( $project );
 
-//define html form variables
 
-$name= mysql_real_escape_string($_GET['name']);
 
-$card_num= mysql_real_escape_string($_GET['card_num']);
-
-$month= mysql_real_escape_string($_GET['month']);
-
-$year= mysql_real_escape_string($_GET['year']);
-
-$cvc= mysql_real_escape_string($_GET['cvc']);
-
-//save payment info into db
 
 if(isset($_GET["finalize"])){
 
-	//theres no table for payment ... 
+$ivn= hexdec( uniqid());
+$order_num= hexdec( uniqid());
 
-	$save= "insert into"
+// if uniqid hasn't been used then insert the uniqid assigned into invoice number
+
+$lookup= " select * from Invoice where Invoice_Number= '$ivn'";
+$query= mysql_query($lookup);
+
+while( mysql_num_rows($query) != 0){
+	//generate new uniqid
+		$ivn= hexdec(uniqid());
+
+		$save= "insert into Invoice values ('$ivn', '$order_num', 1 )";
+
+		($run= mysql_query($save) ) or die (mysql_error());
+}
+
+
+
+
+	//when finalized button is clicked save invoice number, order number, and invoice_status of 1 for processing
+
+	//display order details from "order details"
+
+
 
 }
 
