@@ -18,16 +18,33 @@ $order_num= hexdec( uniqid());
 
 // if uniqid hasn't been used then insert the uniqid assigned into invoice number
 
-$lookup= " select * from Invoice where Invoice_Number= '$ivn'";
-$query= mysql_query($lookup);
 
-while( mysql_num_rows($query) != 0){
+$lookup_ivn= "select * from Invoice where Invoice_Number= '$ivn'";
+
+$ivn_query= mysql_query($lookup_ivn);
+
+$lookup_order_num= "select * from Invoice where Order_Number= '$order_num'";
+
+$order_num_query= mysql_query($lookup_order_num);
+
 	//generate new uniqid
-		$ivn= hexdec(uniqid());
+
+	if( mysql_num_rows ($lookup_ivn != 0)){
+
+			$ivn= hexdec(uniqid());
+
+	}
+
+	if( mysql_num_rows($lookup_order_num !=0)){
+
+		$order_num= hexdec(uniqid());
+
+	}
 
 		$save= "insert into Invoice values ('$ivn', '$order_num', 1 )";
 
 		($run= mysql_query($save) ) or die (mysql_error());
+
 }
 
 
