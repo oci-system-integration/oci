@@ -34,8 +34,7 @@ hr {
 label {width: 10em;}
 
 input{border-color: orange; border-width: 5px}
-input[type=submit]{
-border-radius: 5px; padding-left: 20px; padding-right: 20px; background-color: white}
+
 hr {
     clear: left;
 }
