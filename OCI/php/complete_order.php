@@ -10,6 +10,19 @@ mysql_select_db( $project );
 
 // retrieve order details in a table
 
+include ("payment.php")
+
+$retrieve=" select * from Order Details where Order_Number= '$order_num'";
+
+$run= mysql_query($retrieve);
+
+while( $r= mysql_fetch_array($run)){
+
+  $item_code= $r["Item_Code"];
+  $item_quantity= $r["Item_Quantity"];
+
+  //display info on browser
+}
 
 
 //
