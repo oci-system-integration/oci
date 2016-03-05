@@ -47,12 +47,9 @@ $order_num_query= mysql_query($lookup_order_num);
 
 }
 
-
-
-
 	//when finalized button is clicked save invoice number, order number, and invoice_status of 1 for processing
 
-	//display order details from "order details"
+
 
 
 
