@@ -22,6 +22,11 @@ while( $r= mysql_fetch_array($run)){
   $item_quantity= $r["Item_Quantity"];
 
   //display info on browser
+
+  //worry about styling later
+
+  echo $order_num ." <br></br>" . $item_code ."<br></br>" . $item_quanity;
+
 }
 
 
