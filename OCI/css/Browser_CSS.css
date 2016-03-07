@@ -6,6 +6,46 @@ border-color: orange;
 border-width: 2px
 }
 
+
+
+  #Header ul 
+{
+list-style-type: none; 
+margin:0;
+padding:0;
+position: relative;
+left: 550px;
+bottom: 100px;
+position: fixed;
+z-index: 2;
+} 
+
+#Header ul li
+{ 
+	display: inline;
+	margin:10px;
+	bottom:425px;
+	left: 300px;
+	padding:0;
+	position: relative;
+	z-index: 2;
+	
+} 
+
+#searchBar
+{
+	margin:10px;
+	bottom:530px;
+	padding:0;
+	position: fixed;
+	z-index: 2;
+	border-radius: 30px;
+	border-color: orange;
+	border-width: 2px
+
+}
+
+
 #ItemLink
 {
 	position:relative;

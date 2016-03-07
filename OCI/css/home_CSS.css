@@ -28,8 +28,8 @@ z-index: 2;
 { 
 	display: inline;
 	margin:10px;
-	bottom:710px;
-	left: 700px;
+	bottom:425px;
+	left: 300px;
 	padding:0;
 	position: relative;
 	z-index: 2;
@@ -39,7 +39,7 @@ z-index: 2;
 #searchBar
 {
 	margin:10px;
-	bottom:830px;
+	bottom:530px;
 	padding:0;
 	position: fixed;
 	z-index: 2;
