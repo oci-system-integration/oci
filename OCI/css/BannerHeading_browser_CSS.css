@@ -11,15 +11,15 @@
 	background-size:cover;
 	position: fixed;
 }
-/* 
+ 
   #Header ul 
 {
 list-style-type: none; 
 margin:0;
 padding:0;
 position: relative;
-left: 550px;
-bottom: 100px;
+left: 520px;
+bottom: 375px;
 position: fixed;
 z-index: 2;
 } 
@@ -39,7 +39,7 @@ z-index: 2;
 #searchBar
 {
 	margin:10px;
-	bottom:530px;
+	bottom:800px;
 	padding:0;
 	position: fixed;
 	z-index: 2;
@@ -48,7 +48,7 @@ z-index: 2;
 	border-width: 2px
 
 }
- */
+
 #CartIcon
 {
 	width: 64px;
