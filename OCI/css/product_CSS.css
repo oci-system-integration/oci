@@ -12,31 +12,39 @@
 	text-align: left;
 	position: relative;
 	left: 450px;
-	top: 300px;
+	bottom: 300px;
 }
 
 #pic1
 {
 	width:400px;
 	height:250px;
+	position:relative;
+	bottom:590px;
 }
 
 #pic2
 {
 	width:250px;
 	height:250px;
+	position:relative;
+	bottom:550px;
 }
 
 #pic3
 {
 	width:250px;
 	height:250px;
+	position:relative;
+	bottom:550px;
 }
 
 #pic4
 {
 	width:250px;
 	height:250px;
+	position:relative;
+	bottom:550px;
 }
 
 #button1
@@ -58,5 +66,17 @@
 	border-color: orange;
 	border-width: 2px
 
+}
+
+#words
+{
+	position: relative;
+	bottom:570px;
+}
+
+#copy
+{
+	position: relative;
+	bottom:550px;
 }
 </style>
