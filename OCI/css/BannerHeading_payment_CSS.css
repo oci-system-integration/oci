@@ -18,8 +18,8 @@ list-style-type: none;
 margin:0;
 padding:0;
 position: relative;
-left: 520px;
-bottom: 270px;
+left: 200px;
+bottom: 100px;
 position: fixed;
 z-index: 2;
 } 
@@ -28,7 +28,7 @@ z-index: 2;
 { 
 	display: inline;
 	margin:10px;
-	bottom:425px;
+	bottom:400px;
 	left: 300px;
 	padding:0;
 	position: relative;
@@ -39,7 +39,7 @@ z-index: 2;
 #searchBar
 {
 	margin:10px;
-	bottom:715px;
+	bottom:500px;
 	padding:0;
 	position: fixed;
 	z-index: 2;
@@ -125,7 +125,7 @@ img:hover
 
 #Logo
 {
-	left: 600px;
+	left: 250px;
 	position: fixed;
 	z-index: 2;
 	
