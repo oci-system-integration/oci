@@ -11,7 +11,6 @@ mysql_select_db( $project );
 //retrieve order details in a table
 
 include ("payment.php");
-include ("Cart_HTML.html");
 
 $retrieve=" select * from Order Details where Order_Number= '$order_num'";
 
