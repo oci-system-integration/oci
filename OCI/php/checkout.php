@@ -1,5 +1,8 @@
 <?php
 
+/* Checkout saves customer shipping information and shipping type into Customer
+and Shipping tables */ 
+
 //connect to db
 
 include (  "dbcreds.php"     ) ;
