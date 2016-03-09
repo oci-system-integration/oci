@@ -16,6 +16,8 @@ mysql_select_db( $project );
 
 //define shipping info variables from html form
 
+$shiptype= mysql_real_escape_string($_GET["shiptype"]);
+
 $customer_name= mysql_real_escape_string($_GET["first_name"]);
 
 $customer_name.= " ";
@@ -39,6 +41,8 @@ $phone_number= mysql_real_escape_string($_GET["phone"]);
 //include ______ to define $total amount
 
 include("cart.php");
+
+$total= $price * $quantity;
 
 // include create account to get email of user
 
@@ -70,7 +74,7 @@ if( isset($_GET["pay"])){
 
 	$customer_query= mysql_query($lookup_customer);
 
-	if( mysql_num_rows($lookup_customer !=0)){
+	while( mysql_num_rows($lookup_customer != 0)){
 
 		$cid= hexdec(uniqid());
 
@@ -86,7 +90,7 @@ if( isset($_GET["pay"])){
 
 	$ship_query= mysql_query($lookup_shipment);
 
-	if( mysql_num_rows($lookup_shipment !=0)){
+	while( mysql_num_rows($lookup_shipment !=0)){
 
 		$shipid= hexdec(uniqid());
 
@@ -104,7 +108,7 @@ if( isset($_GET["pay"])){
 	$order_num_query= mysql_query($lookup_order_num);
 
 
-	if( mysql_num_rows($lookup_order_num !=0)){
+	while( mysql_num_rows($lookup_order_num !=0)){
 
 		$order_num= hexdec(uniqid());
 
@@ -113,9 +117,9 @@ if( isset($_GET["pay"])){
 
 	$save_customer_info= " insert into Customer values('$cid', '$customer_name', '$phone_number', '$email', '$street1', '$street2', '$city', '$state', '$country', '$zip' )";
 
-	$save_ship_info= " insert into Shipment values( '$shipid' , '$order_num', '$ship_type' )"
+	$save_ship_info= " insert into Shipment values( '$shipid' , '$order_num', '$shiptype' )"
 
-	$save_order= " insert into Order values ('$order_num', '$cid', 'date', '$total', 1 )"
+	$save_order= " insert into Order values ('$order_num', '$cid', NOW(), '$total', 1 )"
 }
 
 // generate unique shipping id, enter date, shippping type
