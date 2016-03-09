@@ -1,7 +1,7 @@
 <?php
 
 /* Checkout saves customer shipping information and shipping type into Customer
-and Shipping tables */ 
+and Shipping tables */
 
 //connect to db
 
@@ -36,19 +36,72 @@ $country= mysql_real_escape_string($_GET["country"]);
 
 $phone_number= mysql_real_escape_string($_GET["phone"]);
 
+// include create account to get email of user
+
+//check if user is new or exisiting
+
+if( )
+
 //save input into db
-
-//does email need to be a field in customer info?
-
 
 
 if( isset($_GET["pay"])){
 
-  $cid= hexdec(uniqid());
+	//customer id
 
-  $save= " insert into Customer values('$cid', '$customer_name', '$phone_number', '/////', '$street1', '$street2', '$city', '$state', '$country', '$zip' )";
+  $cid= hexdec(uniqid());
+	//make sure customer id is unique
+
+	$lookup_customer= "select * from Customer where Customer_ID= '$cid'";
+
+	$customer_query= mysql_query($lookup_customer);
+
+	if( mysql_num_rows($lookup_customer !=0)){
+
+		$cid= hexdec(uniqid());
+
+	}
+
+	//shipment id
+
+	$shipid= hexdec(uniqid());
+
+	//make sure shipment id is unique
+
+	$lookup_shipment= "select * from Shipment where Shipment_IDv= '$shipid'";
+
+	$ship_query= mysql_query($lookup_shipment);
+
+	if( mysql_num_rows($lookup_shipment !=0)){
+
+		$shipid= hexdec(uniqid());
+
+	}
+
+
+	//order number
+
+	$order_num= hexdec( uniqid());
+
+	//make sure order num is unique
+
+	$lookup_order_num= "select * from Invoice where Order_Number= '$order_num'";
+
+	$order_num_query= mysql_query($lookup_order_num);
+
+
+	if( mysql_num_rows($lookup_order_num !=0)){
+
+		$order_num= hexdec(uniqid());
+
+	}
+
+
+	$save_customer_info= " insert into Customer values('$cid', '$customer_name', '$phone_number', '/////', '$street1', '$street2', '$city', '$state', '$country', '$zip' )";
+	$save_ship_info= " insert into Shipment values( '$shipid' , $order_num )"
 }
 
+// generate unique shipping id, enter date, shippping type
 
 
 ?>
