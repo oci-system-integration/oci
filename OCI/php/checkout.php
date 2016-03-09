@@ -117,9 +117,9 @@ if( isset($_GET["pay"])){
 
 	$save_customer_info= " insert into Customer values('$cid', '$customer_name', '$phone_number', '$email', '$street1', '$street2', '$city', '$state', '$country', '$zip' )";
 
-	$save_ship_info= " insert into Shipment values( '$shipid' , '$order_num', '$shiptype' )"
+	$save_ship_info= " insert into Shipment values( '$shipid' , '$order_num', '$shiptype' )";
 
-	$save_order= " insert into Order values ('$order_num', '$cid', NOW(), '$total', 1 )"
+	$save_order= " insert into Order values ('$order_num', '$cid', NOW(), '$total', 1 )";
 }
 
 
