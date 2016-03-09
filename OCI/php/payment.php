@@ -43,9 +43,4 @@ $ivn_query= mysql_query($lookup_ivn);
 	//when finalized button is clicked save invoice number, order number, and invoice_status of 1 for processing
 
 
-
-
-
-}
-
 ?>
