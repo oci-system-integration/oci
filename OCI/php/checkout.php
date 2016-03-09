@@ -36,11 +36,25 @@ $country= mysql_real_escape_string($_GET["country"]);
 
 $phone_number= mysql_real_escape_string($_GET["phone"]);
 
+//include ______ to define $total amount
+
+include("cart.php");
+
 // include create account to get email of user
+
+include("create_account.php");
 
 //check if user is new or exisiting
 
-if( )
+if( $e_email== ""){
+
+	$email= $n_email;
+}
+
+else{
+
+	$email= $e_email;
+}
 
 //save input into db
 
@@ -97,8 +111,11 @@ if( isset($_GET["pay"])){
 	}
 
 
-	$save_customer_info= " insert into Customer values('$cid', '$customer_name', '$phone_number', '/////', '$street1', '$street2', '$city', '$state', '$country', '$zip' )";
-	$save_ship_info= " insert into Shipment values( '$shipid' , $order_num )"
+	$save_customer_info= " insert into Customer values('$cid', '$customer_name', '$phone_number', '$email', '$street1', '$street2', '$city', '$state', '$country', '$zip' )";
+
+	$save_ship_info= " insert into Shipment values( '$shipid' , '$order_num', '$ship_type' )"
+
+	$save_order= " insert into Order values ('$order_num', '$cid', 'date', '$total', 1 )"
 }
 
 // generate unique shipping id, enter date, shippping type
