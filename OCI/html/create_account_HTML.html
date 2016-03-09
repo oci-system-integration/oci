@@ -1,32 +1,34 @@
-<DOCTYPE html>
+<script>
 
-  <script>
+  function login()
+    {
 
-    function login()
+       if(document.getElementById("login").clicked == true)
+        {
+          document.getElementById("e_email").required= "required"
+
+          document.getElementById("pass").required= "required"
+        }
+    }
+
+    function create()
       {
 
-         if(document.getElementById("login").clicked == true)
+         if(document.getElementById("create").clicked == true)
           {
-            document.getElementById("e_email").required= "required"
+            document.getElementById("n_email").required= "required"
 
-            document.getElementById("pass").required= "required"
+            document.getElementById("new_password").required= "required"
+
+            document.getElementById("check_password").required= "required"
           }
       }
 
-      function create()
-        {
+</script>
 
-           if(document.getElementById("create").clicked == true)
-            {
-              document.getElementById("n_email").required= "required"
+<DOCTYPE html>
 
-              document.getElementById("new_password").required= "required"
 
-              document.getElementById("check_password").required= "required"
-            }
-        }
-
-  </script>
 
 <body>
 
