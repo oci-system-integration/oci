@@ -122,7 +122,6 @@ if( isset($_GET["pay"])){
 	$save_order= " insert into Order values ('$order_num', '$cid', NOW(), '$total', 1 )"
 }
 
-// generate unique shipping id, enter date, shippping type
 
 
 ?>
