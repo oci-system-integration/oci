@@ -8,9 +8,10 @@ include (  "dbcreds.php"     ) ;
 print "Connected to MySQL<br>";
 mysql_select_db( $project );
 
-// retrieve order details in a table
+//retrieve order details in a table
 
-include ("payment.php")
+include ("payment.php");
+include ("Cart_HTML.html");
 
 $retrieve=" select * from Order Details where Order_Number= '$order_num'";
 
@@ -21,13 +22,15 @@ while( $r= mysql_fetch_array($run)){
   $item_code= $r["Item_Code"];
   $item_quantity= $r["Item_Quantity"];
 
-  //display info on browser
-
-  //worry about styling later
-
-  echo $order_num ." <br></br>" . $item_code ."<br></br>" . $item_quanity;
-
 }
+
+//display info on browser
+
+//worry about styling later
+
+echo $order_num ." <br></br>" . $item_code ."<br></br>" . $item_quanity;
+
+
 
 
 //
