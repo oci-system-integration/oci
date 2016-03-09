@@ -9,12 +9,12 @@ print "Connected to MySQL<br>";
 mysql_select_db( $project );
 
 
-
+include( "checkout.php");
 
 if(isset($_GET["finalize"])){
 
 $ivn= hexdec( uniqid());
-$order_num= hexdec( uniqid());
+
 
 // if uniqid hasn't been used then insert the uniqid assigned into invoice number
 
@@ -23,9 +23,6 @@ $lookup_ivn= "select * from Invoice where Invoice_Number= '$ivn'";
 
 $ivn_query= mysql_query($lookup_ivn);
 
-$lookup_order_num= "select * from Invoice where Order_Number= '$order_num'";
-
-$order_num_query= mysql_query($lookup_order_num);
 
 	//generate new uniqid
 
@@ -35,15 +32,11 @@ $order_num_query= mysql_query($lookup_order_num);
 
 	}
 
-	if( mysql_num_rows($lookup_order_num !=0)){
 
-		$order_num= hexdec(uniqid());
 
-	}
+	$save_invoice= "insert into Invoice values ('$ivn', '$order_num', 1 )";
 
-		$save= "insert into Invoice values ('$ivn', '$order_num', 1 )";
-
-		($run= mysql_query($save) ) or die (mysql_error());
+	($run= mysql_query($save_invoice) ) or die (mysql_error());
 
 }
 
