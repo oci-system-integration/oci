@@ -6,9 +6,6 @@ border-color: orange;
 border-width: 2px;
 margin:auto;
 }
- body{
-  background-image: url("BG1.png");
- }
  
  .Header
 {
@@ -75,9 +72,9 @@ z-index: 2;
 
 label {width: 10em;}
 
-input{border-color: orange; border-width: 5px}
+input{border-color: orange; border-width: 3px}
 input[type=submit]{
-border-radius: 5px; padding-left: 20px; padding-right: 20px; background-color: white}
+border-radius: 3px; padding-left: 20px; padding-right: 20px; background-color: white}
 hr {
     clear: left;
 }
