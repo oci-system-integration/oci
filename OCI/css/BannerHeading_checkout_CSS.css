@@ -1,16 +1,25 @@
-<stlye>
 
-nav a{
-	margin:0;
-	margin-left:50%;
-	 }
 	 
 .row-centered{
 	text-align: center;
 }
 
+@media screen and (max-width: 500px)
+{
+	nav img {
+			width: 32px;
+			height: 32px;
+			}
+				#logo
+				{
+				width: 75px;
+				height: 75px;
+				
+				}
+			
+};
 
-</style>
+
 
 
 
