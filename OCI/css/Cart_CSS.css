@@ -35,7 +35,6 @@ padding:0;
 position: relative;
 left: 550px;
 bottom: 60px;
-position: fixed;
 z-index: 2;
 } 
 
@@ -51,18 +50,6 @@ z-index: 2;
 	
 } 
 
-#searchBar
-{
-	margin:10px;
-	bottom:530px;
-	padding:0;
-	position: fixed;
-	z-index: 2;
-	border-radius: 30px;
-	border-color: orange;
-	border-width: 2px
-
-}
 
 
 </style>

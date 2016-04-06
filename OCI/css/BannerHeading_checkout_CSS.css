@@ -9,7 +9,7 @@
 	top: 0;
 	left: 0;
 	background-size:cover;
-	position: fixed;
+	position: relative;
 }
  
   #Header ul 
@@ -19,8 +19,7 @@ margin:0;
 padding:0;
 position: relative;
 left: 500px;
-top:270px;
-position: fixed;
+top:100px;
 z-index: 2;
 } 
 
@@ -36,18 +35,6 @@ z-index: 2;
 	
 } 
 
-#searchBar
-{
-	margin:10px;
-	bottom:770px;
-	padding:0;
-	position: fixed;
-	z-index: 2;
-	border-radius: 30px;
-	border-color: orange;
-	border-width: 2px
-
-}
 
 #CartIcon
 {
@@ -126,7 +113,7 @@ img:hover
 #Logo
 {
 	left: 600px;
-	position: fixed;
+	position: relative;
 	z-index: 2;
 	
 }
