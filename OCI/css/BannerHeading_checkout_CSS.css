@@ -1,4 +1,22 @@
-<style>
+<stlye>
+
+nav a{
+	margin:0;
+	margin-left:50%;
+	 }
+	 
+.row-centered{
+	text-align: center;
+}
+
+
+</style>
+
+
+
+
+
+/* <style>
 
 
  
@@ -118,4 +136,4 @@ img:hover
 	
 }
 
-</style>
+</style> */
