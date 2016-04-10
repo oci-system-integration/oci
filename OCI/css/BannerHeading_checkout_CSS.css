@@ -57,6 +57,19 @@
 	transition: .25s width, .25s height;
 }
 
+#AdminIcon
+{
+	width: 64px;
+	height: 64px;
+	transition: .5s width, .5s height;
+}
+#AdminIcon:hover
+{
+	width: 70px;
+	height: 70px;
+	transition: .25s width, .25s height;
+}
+
 img:hover
 {
 	cursor:pointer;
