@@ -1,0 +1,129 @@
+<style>
+label {background:#69D2E7; width: 6px;}
+
+fieldset {
+border-radius: 30px;
+border-color: orange;
+border-width: 2px
+}
+ body{
+  background-image: url("BG1.png");
+ }
+
+
+
+input{
+border-color: #FA6900; 
+border-width: 2px;
+border-radius: 5px;
+padding-left: 20px;
+padding-right: 20px; 
+ }
+hr {
+    clear: left;
+}
+
+label {width: 10em;}
+
+input{border-color: orange; border-width: 5px}
+input[type=submit]{
+border-radius: 5px; padding-left: 20px; padding-right: 20px; background-color: white}
+hr {
+    clear: left;
+}
+
+
+
+  #Header ul 
+{
+list-style-type: none; 
+margin:0;
+padding:0;
+position: relative;
+left: 550px;
+bottom: 100px;
+position: fixed;
+z-index: 2;
+} 
+
+#Header ul li
+{ 
+	display: inline;
+	margin:10px;
+	bottom:300px;
+	left: 300px;
+	padding:0;
+	position: relative;
+	z-index: 2;
+	
+} 
+
+#searchBar
+{
+	margin:10px;
+	bottom:400px;
+	padding:0;
+	position: fixed;
+	z-index: 2;
+	border-radius: 30px;
+	border-color: orange;
+	border-width: 2px
+
+}
+
+
+
+#button1
+{
+	position: relative;
+	
+}
+
+#button1:active
+{
+	position: relative;
+	top: 2px;
+}
+
+#searchBar
+{
+
+		margin:10px;
+	bottom:530px;
+	padding:0;
+	position: fixed;
+	z-index: 2;
+	border-radius: 30px;
+	border-color: orange;
+	border-width: 2px
+
+}
+
+#AdminIcon
+{
+	width: 64px;
+	height: 64px;
+	transition: .5s width, .5s height;
+}
+#AdminIcon:hover
+{
+	width: 70px;
+	height: 70px;
+	transition: .25s width, .25s height;
+}
+
+
+img:hover
+{
+	cursor:pointer;
+}
+
+#Logo
+{
+	left: 600px;
+	position: fixed;
+	z-index: 2;
+	
+}
+
+</style>

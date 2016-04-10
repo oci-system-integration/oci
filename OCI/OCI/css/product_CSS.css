@@ -1,0 +1,82 @@
+<style>
+.Header
+{
+	width:100%;
+	height:130px;
+	background-size:cover;
+	position: fixed;
+}
+
+.info
+{
+	text-align: left;
+	position: relative;
+	left: 450px;
+	bottom: 300px;
+}
+
+#pic1
+{
+	width:400px;
+	height:250px;
+	position:relative;
+	bottom:590px;
+}
+
+#pic2
+{
+	width:250px;
+	height:250px;
+	position:relative;
+	bottom:550px;
+}
+
+#pic3
+{
+	width:250px;
+	height:250px;
+	position:relative;
+	bottom:550px;
+}
+
+#pic4
+{
+	width:250px;
+	height:250px;
+	position:relative;
+	bottom:550px;
+}
+
+#button1
+{
+	position: relative;
+	
+}
+
+#button1:active
+{
+	position: relative;
+	top: 2px;
+}
+
+#searchBar
+{
+
+	border-radius: 30px;
+	border-color: orange;
+	border-width: 2px
+
+}
+
+#words
+{
+	position: relative;
+	bottom:570px;
+}
+
+#copy
+{
+	position: relative;
+	bottom:550px;
+}
+</style>

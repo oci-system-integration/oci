@@ -1,0 +1,22 @@
+<style>
+
+.buttons
+{
+	border-radius: 12px;
+	background-color: #FF9900;
+	border: 2px solid orange;
+}
+
+.buttons:hover
+{
+	background-color: #FF9933;
+	border: 2px solid orange;
+	
+}
+
+.buttons:active
+{
+	background-color: #FFCC33;
+	border: 2px solid orange;
+}
+</style>

@@ -1,0 +1,55 @@
+<style>
+
+#cat1
+{
+	position:relative;
+	left:100px;
+	transition: .8s all;
+	letter-spacing:0em;
+	font-weight: normal;
+}
+
+#cat2
+{
+	position:relative;
+	left:250px;
+	bottom:32px;
+	transition: .8s all;
+	letter-spacing:0em;
+	font-weight: normal;
+}
+
+#cat3
+{
+	position:relative;
+	left:450px;
+	bottom:65px;
+	transition: .8s all;
+	letter-spacing:0em;
+	font-weight: normal;
+}
+
+#cat1:hover
+{
+	font-weight: bold;
+	cursor:pointer;
+	letter-spacing:.1em;
+	transition: .8s all;
+}
+
+#cat2:hover
+{
+	font-weight: bold;
+	cursor:pointer;
+	letter-spacing:.1em;
+	transition: .8s all;
+}
+
+#cat3:hover
+{
+	font-weight: bold;
+	cursor:pointer;
+	letter-spacing:.1em;
+	transition: .8s all;
+}
+</style>

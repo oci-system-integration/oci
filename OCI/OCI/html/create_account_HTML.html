@@ -1,0 +1,133 @@
+<script>
+
+  function login()
+    {
+
+       if(document.getElementById("login").clicked == true)
+        {
+          document.getElementById("e_email").required= "required"
+
+          document.getElementById("pass").required= "required"
+        }
+    }
+
+    function create()
+      {
+
+         if(document.getElementById("create").clicked == true)
+          {
+            document.getElementById("n_email").required= "required"
+
+            document.getElementById("new_password").required= "required"
+
+            document.getElementById("check_password").required= "required"
+          }
+      }
+
+</script>
+
+<DOCTYPE html>
+
+
+
+<body>
+
+<head>
+<link rel="stylesheet" type="text/css" href="../css/create_account_CSS.css">
+<link rel="stylesheet" type="text/css" href="../css/BannerHeading_checkout_CSS.css">
+</head>
+
+<form action="../php/create_account.php">
+
+  <body>
+
+    <Div Class="Header" id="Header">
+
+
+<a href="home_HTML.html">
+<img src= "images/c1.png" width="150" height="150" id="Logo">
+</a>
+
+<img src= "images/banner.jpg" width="100%" height="160px" id="bannerBG" style="position:fixed;">
+
+<ul id="Icons">
+
+<li>
+<a href="Cart_HTML.html">
+<img src= "images/Cart1.png" width="64" height="64" id="CartIcon" title="Cart">
+</a>
+</li>
+
+<li>
+<a href="Checkout_HTML.html">
+<img src= "images/Shipping.png" width="64" height="64" id="ShippingIcon" title="Checkout">
+</a>
+</li>
+
+<li>
+<a href="Browser_HTML.html">
+<img src= "images/Browse.png" width="64" height="64" id="SignInIcon" title="Browse Products">
+</a>
+</li>
+
+<li>
+<a href="#">
+<img src= "images/admin.png" width="64" height="64" id="AdminIcon" title="Admin">
+</a>
+</li>
+
+</ul>
+
+</Div>
+
+
+    <br><br><br><br><br>
+    <center>
+	<br><br><br><br><br>
+
+      <legend> Welcome! please Sign In or create a new account to continue	</legend>
+
+      <fieldset>
+
+      <label for = "e_email" > Existing Login </label><input type=text name="e_email" required =" " id="e_email"><br>
+
+      <label for= "pass"> Password</label><input type=password name="password" required =" "autofocus autocomplete="off"id="password"><br><br>
+
+      <button type= "submit" name="login" onSubmit="login()" id="login" style="border-color: orange; border-width: 5px; background-color: #FFFF66;"> Login </button> <br><br>
+
+      Fill in the fields below to create a new account<br><br>
+
+      <label for = "n_email" > New User's Email </label><input type=text name="n_email" id= "n_email" required= " "> <br>
+
+      <label for= "new_password"> Password</label><input type=password name="new_password" required =" "autofocus autocomplete="off"id="new_password"><br>
+
+      <label for= "check_password"> Re-type Password</label><input type=password name="check_password" onblur = "check()" required =" "autofocus autocomplete="off"id="check_password"><br>
+<br>
+      <button type= "submit" name="create" id="create" onSubmit= "create()" style="border-color: orange; border-width: 5px; background-color: #FFFF66;"> Create Account </button>
+
+      <br><br>
+
+    </center>
+    </fieldset>
+
+  </body>
+</form>
+<script>
+  function check() {
+	  ptrP1 = document.getElementById("new_password")
+      ptrP2 = document.getElementById("check_password")
+
+
+
+	  if (   ptrP1.value !=  ptrP2.value  )
+	    {   document.getElementById("new_password").value=""
+		document.getElementById("check_password").value=""//ERASE 2ND FIELDS CONTENTS
+		     alert("passwords do not match");//WARN USER -- LOOK AT SPAN ELT
+
+		 }
+  					}
+</script>
+
+
+<br><br><br><br><br>
+ <footer> <p> Copyright 2016 Overwhelmed Commerce, Inc. </p></footer>

@@ -1,0 +1,147 @@
+<style>
+
+
+ 
+ .Header
+{
+	width:100%;
+	height:230px;
+	top: 0;
+	left: 0;
+	background-size:cover;
+	position: fixed;
+}
+ 
+  #Header ul 
+{
+list-style-type: none; 
+margin:0;
+padding:0;
+position: relative;
+left: 200px;
+bottom: 100px;
+position: fixed;
+z-index: 2;
+} 
+
+#Header ul li
+{ 
+	display: inline;
+	margin:10px;
+	bottom:400px;
+	left: 300px;
+	padding:0;
+	position: relative;
+	z-index: 2;
+	
+} 
+
+#searchBar
+{
+	margin:10px;
+	bottom:500px;
+	padding:0;
+	position: fixed;
+	z-index: 2;
+	border-radius: 30px;
+	border-color: orange;
+	border-width: 2px
+
+}
+
+#CartIcon
+{
+	width: 64px;
+	height: 64px;
+	transition: .5s width, .5s height;
+}
+#CartIcon:hover
+{
+	width: 70px;
+	height: 70px;
+	transition: .25s width, .25s height;
+}
+
+#HomeIcon
+{
+	width: 64px;
+	height: 64px;
+	transition: .5s width, .5s height;
+}
+
+#HomeIcon:hover
+{
+	width: 70px;
+	height: 70px;
+	transition: .25s width, .25s height;
+}
+
+#AboutUsIcon:hover
+{
+	width: 70px;
+	height: 70px;
+	transition: .25s width, .25s height;
+}
+
+#AboutUsIcon
+{
+	width: 64px;
+	height: 64px;
+	transition: .5s width, .5s height;
+}
+
+#ShippingIcon
+{
+	width: 64px;
+	height: 64px;
+	transition: .5s width, .5s height;
+}
+
+#ShippingIcon:hover
+{
+	width: 70px;
+	height: 70px;
+	transition: .25s width, .25s height;
+}
+
+#SignInIcon:hover
+{
+	width: 70px;
+	height: 70px;
+	transition: .25s width, .25s height;
+}
+
+#SignInIcon
+{
+	width: 64px;
+	height: 64px;
+	transition: .5s width, .5s height;
+}
+
+#AdminIcon
+{
+	width: 64px;
+	height: 64px;
+	transition: .5s width, .5s height;
+}
+#AdminIcon:hover
+{
+	width: 70px;
+	height: 70px;
+	transition: .25s width, .25s height;
+}
+
+img:hover
+{
+	cursor:pointer;
+}
+
+#Logo
+{
+	left: 250px;
+	position: fixed;
+	z-index: 2;
+	
+}
+
+</style>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+
+<form action= "../php/checkout.php">
+<body>
+<head>
+<link rel="stylesheet" type="text/css" href="../css/Checkout_CSS.css">
+<link rel="stylesheet" type="text/css" href="../css/BannerHeading_checkout_CSS.css">
+<link rel="stylesheet" type="text/css" href="../css/Button_CSS.css">
+</head>
+
+
+
+<Div Class="Header" id="Header">
+
+<a href="home_HTML.html">
+<img src= "images/c1.png" width="150" height="150" id="Logo">
+</a>
+
+<img src= "images/banner.jpg" width="100%" height="160px" id="bannerBG">
+
+<ul id="Icons">
+
+<li>
+<a href="Cart_HTML.html">
+<img src= "images/Cart1.png" width="64" height="64" id="CartIcon" title="Cart">
+</a>
+</li>
+
+<li>
+<a href="Checkout_HTML.html">
+<img src= "images/Shipping.png" width="64" height="64" id="ShippingIcon" title="Checkout">
+</a>
+</li>
+
+<li>
+<a href="Browser_HTML.html">
+<img src= "images/Browse.png" width="64" height="64" id="SignInIcon" title="Browse Products">
+</a>
+</li>
+
+<li>
+<a href="#">
+<img src= "images/admin.png" width="64" height="64" id="AdminIcon" title="Admin">
+</a>
+</li>
+
+</ul>
+
+</Div>
+
+
+<br><br><br><br>
+<center>
+
+<br><br><br><br><br>
+<legend> Shipping Info	</legend>
+
+<fieldset>
+
+<p> Select Shipping Type: <p>
+
+  <select required name= "shiptype">
+      <option value="express"> Express </option>
+      <option value="standard"> Standard </option>
+  </select>
+
+  <br></br>
+
+Please provide the information needed below <br><br>
+
+<label for = "first_name" > First Name </label><input type=text name="first_name" required ="required" id= "first_name"><br>
+
+<label for = "last_name" > Last Name </label><input type=text name="last_name" required ="required" id= "last_name"><br>
+
+<label for = "address_1" > Address 1</label><input type=text name="address_1" required ="required" id= "address_1"><br>
+
+<label for= "address_2"> Address 2</label><input type=text name="address_2" required ="required" id="address_2"><br>
+
+<label for = "city"> City</label><input type=text name= "city" required ="required"id="city"><br>
+
+<label for = "state"> State</label><input type=text name= "state" required ="required"id="state"><br>
+
+<label for = "zip"> Zip Code</label><input type=text name= "zip" required ="required"id="zip"><br>
+
+<label for = "country"> Country</label><input type=text name= "country" required ="required"id="country"><br>
+
+<label for = "phone"> Phone Number</label><input type=text name= "phone" required ="required"id="phone"><br>
+
+<br><br>
+<button type="button" style="border-color: orange; border-width: 5px; background-color: #FFFF66;">Back</button>               <input type= "submit" name= "pay" value= "Payment Info" style="border-color: orange; border-width: 5px; background-color: #FFFF66;">
+
+</center>
+
+
+<br><br><br><br><br>
+ <footer> <p> Copyright 2016 Overwhelmed Commerce, Inc. </p></footer>
+</body>
+</form>

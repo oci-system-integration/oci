@@ -1,0 +1,112 @@
+<style>
+
+fieldset {
+border-radius: 30px;
+border-color: orange;
+border-width: 2px
+}
+
+
+
+  #Header ul 
+{
+list-style-type: none; 
+margin:0;
+padding:0;
+position: relative;
+left: 550px;
+bottom: 100px;
+position: fixed;
+z-index: 2;
+} 
+
+#Header ul li
+{ 
+	display: inline;
+	margin:10px;
+	bottom:425px;
+	left: 300px;
+	padding:0;
+	position: relative;
+	z-index: 2;
+	
+} 
+
+#searchBar
+{
+	margin:10px;
+	bottom:530px;
+	padding:0;
+	position: fixed;
+	z-index: 2;
+	border-radius: 30px;
+	border-color: orange;
+	border-width: 2px
+
+}
+
+
+#ItemLink
+{
+	position:relative;
+	left:90px;
+	top: 90px;
+}
+
+#ItemOverview
+{
+	position:relative;
+	left:90px;
+	top: 90px;
+}
+
+#ItemPrice
+{
+	position:relative;
+	left:600px;
+	bottom:98px;
+}
+
+#Item
+{
+	position:relative;
+	left:100px;
+	top:100px;
+}
+
+#Line
+{
+	position:relative;
+	bottom:80px;
+	border-bottom:solid;
+	border-bottom-color:grey;
+}
+
+
+#cat1
+{
+	bottom:700px;
+	left:30px;
+}
+
+#button1
+{
+	position: relative;
+	
+}
+
+#button1:active
+{
+	position: relative;
+	top: 2px;
+}
+
+#AddToCart
+{
+	position:relative;
+	left:600px;
+	bottom:100px;
+	
+}
+
+</style>
